@@ -35,6 +35,10 @@ simply.on('longClick', function(e) {
     geolocate();
   }
   
+  if ( e.button == 'up' ) {
+    Pebble.showSimpleNotificationOnPebble('Hello!', 'Notifications from JavaScript? Welcome to the future!');
+  }
+  
 });
 
 simply.on('accelTap', function(e) {
