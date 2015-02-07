@@ -18,6 +18,17 @@ function geolocate () {
 
 
 
+simply.on('accelData', function (data) {
+  
+  var accelPoint = data.accels[0];
+  
+  simply.text({ title: 'accelPoint', 
+                subtitle: 'x : ' + accelPoint.x + "\n"+ 'y : ' + accelPoint.y + "\n" + 'z : ' + accelPoint.z
+  });
+  
+});
+
+
 // click
 simply.on('singleClick', function(e) {
   
@@ -33,10 +44,6 @@ simply.on('longClick', function(e) {
   
   if( e.button == 'select' ) {
     geolocate();
-  }
-  
-  if ( e.button == 'up' ) {
-    Pebble.showSimpleNotificationOnPebble('Hello!', 'Notifications from JavaScript? Welcome to the future!');
   }
   
 });
