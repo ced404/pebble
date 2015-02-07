@@ -23,7 +23,7 @@ simply.on('accelData', function (data) {
   var accelPoint = data.accels[0];
   
   simply.text({ title: 'accelPoint', subtitle: ''});
-  simply.body( subtitle: 'x : ' + accelPoint.x + "\n"+ 'y : ' + accelPoint.y + "\n" + 'z : ' + accelPoint.z, true);
+  simply.body( 'x : ' + accelPoint.x + "\n"+ 'y : ' + accelPoint.y + "\n" + 'z : ' + accelPoint.z, true);
 });
 
 
