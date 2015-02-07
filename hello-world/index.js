@@ -1,7 +1,7 @@
 
 simply.fullscreen(true);
 
-simply.title('Hello World!');
+simply.title('Hello World !!');
 simply.vibe('short');
 
 
